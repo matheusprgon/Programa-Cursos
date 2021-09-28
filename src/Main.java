@@ -18,7 +18,6 @@ public class Main {
                     "4 - Visualize os cursos\n" +
                     "5 - Finalizar o programa\n");
             escolha = ler.nextInt();
-
             switch (escolha){
                 case 1:
                     System.out.println("Cadastre o aluno");
@@ -89,11 +88,5 @@ public class Main {
                     System.exit(0);
             }
         }
-        }
-
-
-
-
-
-
+    }
 }
