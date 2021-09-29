@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ArrayList<String> cursos = new ArrayList<String>();
         ArrayList<String> aluno = new ArrayList<String>();
         ArrayList<String> alunosMatriculados = new ArrayList<String>();
@@ -10,7 +10,7 @@ public class Main {
         int loop = 1;
         int escolha = 0;
         int continuar = 1;
-        while (loop == 1){
+        while (loop == 1) {
             continuar = 1;
             System.out.println("1 - Cadastre o aluno\n" +
                     "2 - Cadastre o curso\n" +
@@ -18,7 +18,7 @@ public class Main {
                     "4 - Visualize os cursos\n" +
                     "5 - Finalizar o programa\n");
             escolha = ler.nextInt();
-            switch (escolha){
+            switch (escolha) {
                 case 1:
                     System.out.println("Cadastre o aluno");
                     String nomeAluno;
@@ -65,20 +65,20 @@ public class Main {
                     System.out.println("Escolha um curso para o aluno");
                     System.out.println("Lista de alunos");
                     for (int i = 0; i < aluno.size(); i++) {
-                        System.out.println((i+1)+" - "+aluno.get(i));
+                        System.out.println((i + 1) + " - " + aluno.get(i));
                     }
                     System.out.println("Lista de cursos");
                     for (int i = 0; i < cursos.size(); i++) {
-                        System.out.println((i+1)+" - "+cursos.get(i));
+                        System.out.println((i + 1) + " - " + cursos.get(i));
                     }
                     System.out.println("Digite o id do aluno");
                     int alunoId;
                     int cursoId;
-                    alunoId = ler.nextInt()-1;
+                    alunoId = ler.nextInt() - 1;
                     System.out.println("Digite o id do curso");
-                    cursoId = ler.nextInt()-1;
-                    System.out.println("O curso "+cursos.get(cursoId)+" foi cadastrado para o aluno "+aluno.get(alunoId));
-                    alunosMatriculados.add(aluno.get(alunoId)+ "-" + cursos.get(cursoId));
+                    cursoId = ler.nextInt() - 1;
+                    System.out.println("O curso " + cursos.get(cursoId) + " foi cadastrado para o aluno " + aluno.get(alunoId));
+                    alunosMatriculados.add(aluno.get(alunoId) + "-" + cursos.get(cursoId));
                     break;
                 case 4:
                     System.out.println("Visualize os cursos");
